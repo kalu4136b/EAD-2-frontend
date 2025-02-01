@@ -99,7 +99,7 @@
                 <li class="nav-item align-self-center">
                   <a
                      class="nav-link "
-                     href="products.html"
+                     href="product.html"
                      rel="nofollow"
                      
                      >Our Products</a
@@ -121,17 +121,14 @@
                      >Contact Us</a
                     >
                 </li>
-              </ul>
-              
-              
-                
+              </ul>                
       
               <ul class="navbar-nav flex-row">
                 <!-- Icons -->
                 <li class="nav-item">
                   <a
                      class="nav-link pe-2"
-                     href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
+                     href="https://www.youtube.com"
                      rel="nofollow"
                      target="_blank"
                      >
@@ -141,7 +138,7 @@
                 <li class="nav-item">
                   <a
                      class="nav-link px-2"
-                     href="https://www.facebook.com/mdbootstrap"
+                     href="https://www.facebook.com"
                      rel="nofollow"
                      target="_blank"
                      >
@@ -151,7 +148,7 @@
                 <li class="nav-item">
                   <a
                      class="nav-link px-2"
-                     href="https://twitter.com/MDBootstrap"
+                     href="https://twitter.com"
                      rel="nofollow"
                      target="_blank"
                      >
@@ -173,14 +170,9 @@
           </div>
         </nav>
 
-
-
-
     <div class="space" style=" height: 100px;">
 
-    </div>
-
-    
+    </div>   
 
     <!-- Product Section -->
     <div class="container mt-5">
@@ -214,7 +206,8 @@
                                         <p class="card-text">${product.description}</p>
                                         <p class="card-text"><strong>Price:</strong> $${product.price}</p>
                                         <p class="card-text"><strong>Stock:</strong> ${product.stockQuantity} available</p>
-                                        <a href="order.html""  class="btn btn-success">Add to Cart</a>
+                                        <a href="order.html""  class="btn btn-success" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}">Add to Cart</a>
+                                        
                                     </div>
                                 </div>
                             </div>
